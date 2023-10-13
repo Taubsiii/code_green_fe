@@ -1,5 +1,7 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatButtonModule } from "@angular/material/button";
 
 import { AppComponent } from "./app.component";
 import { LeafletModule } from "@asymmetrik/ngx-leaflet";
@@ -10,7 +12,13 @@ import { HomeComponent } from "./page/home/home.component";
 
 @NgModule({
   declarations: [AppComponent, DriverComponent, SalesComponent, HomeComponent],
-  imports: [BrowserModule, LeafletModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    LeafletModule,
+    AppRoutingModule,
+    MatButtonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

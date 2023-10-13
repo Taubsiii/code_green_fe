@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { MapComponent } from "./driver.component";
+import { DriverComponent } from "./driver.component";
 
 describe("MapComponent", () => {
-  let component: MapComponent;
-  let fixture: ComponentFixture<MapComponent>;
+  let component: DriverComponent;
+  let fixture: ComponentFixture<DriverComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MapComponent],
+      declarations: [DriverComponent],
     });
-    fixture = TestBed.createComponent(MapComponent);
+    fixture = TestBed.createComponent(DriverComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
